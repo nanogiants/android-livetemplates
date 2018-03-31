@@ -35,8 +35,8 @@ liveTemplateFiles.forEach((filename) => {
 });
 
 const readme = String(fs.readFileSync(path.join(process.cwd(), '..', 'README.md')));
-const section = `Livetemplates\n-\n\n${newFiles.map(file => `* [${file.split('.md')[0].trim().replace(/Appcom /g, '')}](documentation/${file.replace(/\s/g, '')})`).join('\n')}\n\nFeedback\n-`;
+const section = `Live templates\n-\n\n${newFiles.map(file => `* [${file.split('.md')[0].trim().replace(/Appcom /g, '')}](documentation/${file.replace(/\s/g, '')})`).join('\n')}\n\nFeedback\n-`;
 
-const newReadme = readme.replace(/Livetemplates\n-(.|\n)*Feedback\n-/g, section);
+const newReadme = readme.replace(/Live templates\n-(.|\n)*Feedback\n-/g, section);
 fs.writeFileSync(path.join(process.cwd(), '..', `README.md`), newReadme);
 

@@ -8,7 +8,7 @@ Installation
 
 * Run the install.sh on any UNIX os (Windows support will follow shortly)
 
-Livetemplates
+Live templates
 -
 
 * [AndroidLog](documentation/AppcomAndroidLog.md)
@@ -24,6 +24,8 @@ or any other form of feedback.
 
 License
 -------
+
+(The MIT License)
 
 Copyright 2018 appcom interactive GmbH
 
