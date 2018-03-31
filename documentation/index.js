@@ -23,7 +23,7 @@ liveTemplateFiles.forEach((filename) => {
         });
 
         const basename = (filename.split('.xml')[0] || '').trim();
-        let content = `# ${basename}\n\n| Abbreviation | Description |\n| --- | --- |\n`;
+        let content = `# ${basename.replace(/Appcom/g, '')}\n\n| Abbreviation | Description |\n| --- | --- |\n`;
 
         result.forEach((line) => {
             content += `| ${line.shortcut} | ${line.description} |\n`
@@ -32,8 +32,6 @@ liveTemplateFiles.forEach((filename) => {
         fs.writeFileSync(path.join(process.cwd(), `${basename.replace(/\s/g, '')}.md`), content);
         newFiles.push(`${basename}.md`);
     }
-
-    console.log(liveTemplate)
 });
 
 const readme = String(fs.readFileSync(path.join(process.cwd(), '..', 'README.md')));

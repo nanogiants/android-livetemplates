@@ -1,4 +1,4 @@
-# Appcom AndroidLog
+#  AndroidLog
 
 | Abbreviation | Description |
 | --- | --- |

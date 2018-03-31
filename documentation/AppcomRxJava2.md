@@ -1,4 +1,4 @@
-# Appcom RxJava 2
+#  RxJava 2
 
 | Abbreviation | Description |
 | --- | --- |
