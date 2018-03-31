@@ -1,0 +1,74 @@
+<templateSet group="Appcom ButterKnife">
+  <template name="bind" value="@Bind(R.id.$VIEW_ID$) $TYPE$ $VIEW_ID_CAMELCASED$;" description="Bind view with butterknife version &lt;= 7.X" toReformat="true" toShortenFQNames="true">
+    <variable name="VIEW_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VIEW_ID_CAMELCASED" expression="underscoresToCamelCase(VIEW_ID)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="onclick" value="@OnClick(R.id.$VIEW_ID$) public void on$VIEW_ID_CAPITALIZED$Clicked(View view) {&#10;  $END$&#10;}" description="Bind OnClickListener with Butterknife" toReformat="true" toShortenFQNames="true">
+    <variable name="VIEW_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VIEW_ID_CAPITALIZED" expression="capitalize(camelCase(VIEW_ID))" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="ontouch" value="@OnTouch(R.id.$VIEW_ID$) public boolean on$VIEW_ID_CAPITALIZED$Touched() {&#10;  $END$&#10;}" description="Bind OnTouchListener with Butterknife" toReformat="true" toShortenFQNames="true">
+    <variable name="VIEW_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VIEW_ID_CAPITALIZED" expression="capitalize(camelCase(VIEW_ID))" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="onitemselected" value="@OnItemSelected(R.id.$VIEW_ID$) public void on$VIEW_ID_CAPITALIZED$Selected(int position) {&#10;  $END$&#10;}" description="Bind OnItemSelectedListener with Butterknife" toReformat="true" toShortenFQNames="true">
+    <variable name="VIEW_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VIEW_ID_CAPITALIZED" expression="capitalize(camelCase(VIEW_ID))" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="oneditoraction" value="@OnEditorAction(R.id.$VIEW_ID$) public boolean on$VIEW_ID_CAPITALIZED$EditorAction(int actionId, KeyEvent event) {&#10;  $END$&#10;}" description="@OnEditorAction Annotation" toReformat="true" toShortenFQNames="true">
+    <variable name="VIEW_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VIEW_ID_CAPITALIZED" expression="capitalize(camelCase(VIEW_ID))" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="bindcolor" value="@BindColor(R.color.$COLOR_ID$) int $COLOR_ID_CAMELCASED$;" description="Bind color with butterknife" toReformat="true" toShortenFQNames="true">
+    <variable name="COLOR_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLOR_ID_CAMELCASED" expression="underscoresToCamelCase(COLOR_ID)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="bindstring" value="@BindString(R.string.$STRING_ID$) String $STRING_ID_CAMELCASED$String;" description="Bind string with butterknife" toReformat="true" toShortenFQNames="true">
+    <variable name="STRING_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STRING_ID_CAMELCASED" expression="underscoresToCamelCase(STRING_ID)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="onlongclick" value="@OnLongClick(R.id.$VIEW_ID$) public boolean on$VIEW_ID_CAPITALIZED$LongClicked(View view) {&#10;  $END$&#10;      return false;&#10;}" description="Bind OnLongClickListener with Butterknife" toReformat="true" toShortenFQNames="true">
+    <variable name="VIEW_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VIEW_ID_CAPITALIZED" expression="capitalize(camelCase(VIEW_ID))" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="binddrawable" value="@BindDrawable(R.drawable.$DRAWABLE_ID$) Drawable $DRAWABLE_ID_CAMELCASED$Drawable;" description="Bind drawable with butterknife" toReformat="true" toShortenFQNames="true">
+    <variable name="DRAWABLE_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DRAWABLE_ID_CAMELCASED" expression="underscoresToCamelCase(DRAWABLE_ID)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="binv" value="@BindView(R.id.$VIEW_ID$) $TYPE$ $VIEW_ID_CAMELCASED$;" description="Bind view with butterknife version &gt;= 8.0" toReformat="true" toShortenFQNames="true">
+    <variable name="VIEW_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VIEW_ID_CAMELCASED" expression="underscoresToCamelCase(VIEW_ID)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>
