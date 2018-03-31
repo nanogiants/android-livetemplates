@@ -11,6 +11,11 @@ Installation
 Livetemplates
 -
 
+* [AndroidLog](documentation/Appcom AndroidLog.md)
+* [ButterKnife](documentation/Appcom ButterKnife.md)
+* [Dagger 2](documentation/Appcom Dagger 2.md)
+* [RxJava 2](documentation/Appcom RxJava 2.md)
+
 Feedback
 -
 

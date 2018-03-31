@@ -22,14 +22,14 @@ liveTemplateFiles.forEach((filename) => {
             });
         });
 
-        const basename = filename.split('.xml')[0] || '';
+        const basename = (filename.split('.xml')[0] || '').trim();
         let content = `# ${basename}\n\n| Abbreviation | Description |\n| --- | --- |\n`;
 
         result.forEach((line) => {
             content += `| ${line.shortcut} | ${line.description} |\n`
         });
 
-        fs.writeFileSync(path.join(process.cwd(), '..', `${basename}.md`), content);
+        fs.writeFileSync(path.join(process.cwd(), `${basename}.md`), content);
         newFiles.push(`${basename}.md`);
     }
 
@@ -37,7 +37,7 @@ liveTemplateFiles.forEach((filename) => {
 });
 
 const readme = String(fs.readFileSync(path.join(process.cwd(), '..', 'README.md')));
-const section = `Livetemplates\n-\n\n${newFiles.map(file => `* [${file.split('.md')[0]}](${file})`)}\n\nFeedback\n-`;
+const section = `Livetemplates\n-\n\n${newFiles.map(file => `* [${file.split('.md')[0].trim().replace(/Appcom /g, '')}](documentation/${file})`).join('\n')}\n\nFeedback\n-`;
 
 const newReadme = readme.replace(/Livetemplates\n-(.|\n)*Feedback\n-/g, section);
 fs.writeFileSync(path.join(process.cwd(), '..', `README.md`), newReadme);
