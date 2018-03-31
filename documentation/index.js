@@ -29,7 +29,7 @@ liveTemplateFiles.forEach((filename) => {
             content += `| ${line.shortcut} | ${line.description} |\n`
         });
 
-        fs.writeFileSync(path.join(process.cwd(), `${basename}.md`), content);
+        fs.writeFileSync(path.join(process.cwd(), `${basename.replace(/\s/g, '')}.md`), content);
         newFiles.push(`${basename}.md`);
     }
 
@@ -37,7 +37,7 @@ liveTemplateFiles.forEach((filename) => {
 });
 
 const readme = String(fs.readFileSync(path.join(process.cwd(), '..', 'README.md')));
-const section = `Livetemplates\n-\n\n${newFiles.map(file => `* [${file.split('.md')[0].trim().replace(/Appcom /g, '')}](documentation/${file})`).join('\n')}\n\nFeedback\n-`;
+const section = `Livetemplates\n-\n\n${newFiles.map(file => `* [${file.split('.md')[0].trim().replace(/Appcom /g, '')}](documentation/${file.replace(/\s/g, '')})`).join('\n')}\n\nFeedback\n-`;
 
 const newReadme = readme.replace(/Livetemplates\n-(.|\n)*Feedback\n-/g, section);
 fs.writeFileSync(path.join(process.cwd(), '..', `README.md`), newReadme);
