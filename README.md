@@ -1,7 +1,7 @@
 # appcom interactive android livetemplates
 
 This repository contains the current appcom interactive android live templates. Clone this repo and run the install script
-install them on your machine. Restart android studio and enjoy.
+to install them on your machine. Restart android studio and enjoy.
 
 Installation
 -
@@ -20,7 +20,7 @@ Feedback
 -
 
 Contact us at <a href="mailto:develoment@appcom-interactive.de">develoment@appcom-interactive.de</a> for requests, errors 
-or any other form of feedback. 
+or any other form of feedback. Preferrably open an issue for this repository.
 
 License
 -------
