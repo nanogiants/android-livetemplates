@@ -25,6 +25,7 @@ liveTemplateFiles.forEach((filename) => {
         const basename = (filename.split('.xml')[0] || '').trim();
         let content = `# ${basename.replace(/Appcom/g, '')}\n\n| Abbreviation | Description |\n| --- | --- |\n`;
 
+        result.sort((a, b) => a.shortcut.localeCompare(b.shortcut));
         result.forEach((line) => {
             content += `| ${line.shortcut} | ${line.description} |\n`
         });
