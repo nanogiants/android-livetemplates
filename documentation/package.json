@@ -1,6 +1,6 @@
 {
   "name": "livetemplates-documentation-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package builds the documentation files for the livetemplates",
   "main": "index.js",
   "scripts": {
