@@ -1,0 +1,8 @@
+<templateSet group="AppcomKotlin">
+  <template name="ccon" value="interface $String$Contract {&#10;  interface $String$View : BaseContract.BaseView&#10;  interface $String$Presenter : BaseContract.BasePresenter&#10;}" description="Create mvp contract" toReformat="false" toShortenFQNames="true">
+    <variable name="String" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+</templateSet>

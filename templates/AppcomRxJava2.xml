@@ -1,4 +1,4 @@
-<templateSet group="Appcom RxJava 2">
+<templateSet group="AppcomRxJava2">
   <template name="rxsingle" value="Single.create(subscriber -&gt; {&#10;  $END$&#10;});" description="Create an single with RxJava 2" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_EXPRESSION" value="true" />
