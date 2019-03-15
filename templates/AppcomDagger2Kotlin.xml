@@ -33,7 +33,7 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="pps" value="@JvmStatic&#10;@Provides&#10;@Singleton&#10;internal abstract fun provide$stringCopy$($classLow$Impl: $stringCopy$Impl): $String$" description="Static provides per singleton" toReformat="false" toShortenFQNames="true">
+  <template name="pps" value="@JvmStatic&#10;@Provides&#10;@Singleton&#10;internal fun provide$stringCopy$($classLow$Impl: $stringCopy$Impl): $String$ = $classLow$Impl" description="Static provides per singleton" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="stringCopy" expression="capitalize(String)" defaultValue="" alwaysStopAt="false" />
     <variable name="classLow" expression="decapitalize(String)" defaultValue="" alwaysStopAt="false" />
@@ -41,7 +41,7 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="ppa" value="@JvmStatic&#10;@Provides&#10;@PerActivity&#10;internal abstract fun provide$stringCopy$($classLow$Impl: $stringCopy$Impl): $String$" description="Static provides per activity" toReformat="false" toShortenFQNames="true">
+  <template name="ppa" value="@JvmStatic&#10;@Provides&#10;@PerActivity&#10;internal fun provide$stringCopy$($classLow$Impl: $stringCopy$Impl): $String$ = $classLow$Impl" description="Static provides per activity" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="stringCopy" expression="capitalize(String)" defaultValue="" alwaysStopAt="false" />
     <variable name="classLow" expression="decapitalize(String)" defaultValue="" alwaysStopAt="false" />
@@ -49,7 +49,7 @@
       <option name="KOTLIN" value="true" />
     </context>
   </template>
-  <template name="ppf" value="@JvmStatic&#10;@Provides&#10;@PerFragment&#10;internal abstract fun provide$stringCopy$($classLow$Impl: $stringCopy$Impl): $String$" description="Static provides per fragment" toReformat="false" toShortenFQNames="true">
+  <template name="ppf" value="@JvmStatic&#10;@Provides&#10;@PerFragment&#10;internal fun provide$stringCopy$($classLow$Impl: $stringCopy$Impl): $String$ = $classLow$Impl" description="Static provides per fragment" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="stringCopy" expression="capitalize(String)" defaultValue="" alwaysStopAt="false" />
     <variable name="classLow" expression="decapitalize(String)" defaultValue="" alwaysStopAt="false" />
