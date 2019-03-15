@@ -1,4 +1,4 @@
-<templateSet group="Appcom ButterKnife">
+<templateSet group="AppcomButterKnife">
   <template name="bind" value="@Bind(R.id.$VIEW_ID$) $TYPE$ $VIEW_ID_CAMELCASED$;" description="Bind view with butterknife version &lt;= 7.X" toReformat="true" toShortenFQNames="true">
     <variable name="VIEW_ID" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
