@@ -1,8 +1,13 @@
-<templateSet group="AppcomKotlin">
+<templateSet group="NanoGiantsKotlin">
   <template name="ccon" value="interface $String$Contract {&#10;  interface $String$View : BaseContract.BaseView&#10;  interface $String$Presenter : BaseContract.BasePresenter&#10;}" description="Create mvp contract" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="tfun" value="@Test&#10;fun `$END$`(){&#10;    &#10;}" description="Create test function" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
     </context>
   </template>
 </templateSet>

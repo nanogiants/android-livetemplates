@@ -1,0 +1,19 @@
+<templateSet group="NanoGiantsCommon">
+  <template name="reg" value="//region $String$&#10;&#10;//endregion" description="Create code region" toReformat="false" toShortenFQNames="true">
+    <variable name="String" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="timd" value="Timber.d($END$);" description="Timber debug output" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="timk" value="Timber.d($END$)" description="Timber debug output" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,7 +1,0 @@
-<templateSet group="AppcomRxJava2Kotlin">
-  <template name="comcall" value="Completable.fromCallable {  }" description="Completable from callable" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="KOTLIN" value="true" />
-    </context>
-  </template>
-</templateSet>
