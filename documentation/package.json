@@ -16,7 +16,7 @@
   "author": "Stefan Neidig <s.neidig@appcom-interactive.de> (http://appcom-interactive.de)",
   "license": "ISC",
   "dependencies": {
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^0.5.5",
     "xml2json": "^0.11.2"
   }
 }
