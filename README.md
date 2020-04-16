@@ -1,6 +1,6 @@
-# appcom interactive android livetemplates
+# NanoGiants android livetemplates
 
-This repository contains the current appcom interactive android live templates. Clone or download this repo and run the install script to install them on your machine. Restart android studio and enjoy.
+This repository contains the current NanoGiants android live templates. Clone or download this repo and run the install script to install them on your machine. Restart android studio and enjoy.
 
 Installation
 -
@@ -10,15 +10,14 @@ Installation
 Live templates
 -
 
-* [AndroidLog](documentation/AppcomAndroidLog.md)
-* [ButterKnife](documentation/AppcomButterKnife.md)
-* [Dagger 2](documentation/AppcomDagger2.md)
-* [RxJava 2](documentation/AppcomRxJava2.md)
+* [NanoGiantsCommon](documentation/NanoGiantsCommon.md)
+* [NanoGiantsDagger2](documentation/NanoGiantsDagger2.md)
+* [NanoGiantsKotlin](documentation/NanoGiantsKotlin.md)
 
 Feedback
 -
 
-Contact us at <a href="mailto:develoment@appcom-interactive.de">develoment@appcom-interactive.de</a> for requests, errors 
+Contact us at <a href="mailto:develoment@nanogiants.de">develoment@nanogiants.de</a> for requests, errors 
 or any other form of feedback. Preferrably open an issue for this repository.
 
 License
