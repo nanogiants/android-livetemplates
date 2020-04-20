@@ -35,18 +35,7 @@
       <option name="JAVA_CODE" value="true" />
     </context>
   </template>
-  <template name="injc" value="@Inject public $CLASS$() {  &#10;}" description="Constructor with @Inject - Annotation" toReformat="true" toShortenFQNames="true">
-    <variable name="CLASS" expression="className()" defaultValue="" alwaysStopAt="false" />
-    <context>
-      <option name="JAVA_DECLARATION" value="true" />
-    </context>
-  </template>
   <template name="injl" value="@Inject lateinit var " description="Inject lateinit" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="KOTLIN" value="true" />
-    </context>
-  </template>
-  <template name="injc" value="@Inject constructor()" description="Inject constructor" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="KOTLIN" value="true" />
     </context>
@@ -76,30 +65,6 @@
     </context>
   </template>
   <template name="bpr" value="@Binds&#10;@Reusable&#10;internal abstract fun bind$stringCopy$($classLow$Impl: $stringCopy$Impl): $String$" description="Binds reusable" toReformat="false" toShortenFQNames="true">
-    <variable name="String" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="stringCopy" expression="capitalize(String)" defaultValue="" alwaysStopAt="false" />
-    <variable name="classLow" expression="decapitalize(String)" defaultValue="" alwaysStopAt="false" />
-    <context>
-      <option name="KOTLIN" value="true" />
-    </context>
-  </template>
-  <template name="pps" value="@Provides&#10;@Singleton&#10;internal fun provide$stringCopy$($classLow$Impl: $stringCopy$Impl): $String$ = $classLow$Impl" description="Static provides per singleton" toReformat="false" toShortenFQNames="true">
-    <variable name="String" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="stringCopy" expression="capitalize(String)" defaultValue="" alwaysStopAt="false" />
-    <variable name="classLow" expression="decapitalize(String)" defaultValue="" alwaysStopAt="false" />
-    <context>
-      <option name="KOTLIN" value="true" />
-    </context>
-  </template>
-  <template name="ppa" value="@Provides&#10;@PerActivity&#10;internal fun provide$stringCopy$($classLow$Impl: $stringCopy$Impl): $String$ = $classLow$Impl" description="Static provides per activity" toReformat="false" toShortenFQNames="true">
-    <variable name="String" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="stringCopy" expression="capitalize(String)" defaultValue="" alwaysStopAt="false" />
-    <variable name="classLow" expression="decapitalize(String)" defaultValue="" alwaysStopAt="false" />
-    <context>
-      <option name="KOTLIN" value="true" />
-    </context>
-  </template>
-  <template name="ppf" value="@Provides&#10;@PerFragment&#10;internal fun provide$stringCopy$($classLow$Impl: $stringCopy$Impl): $String$ = $classLow$Impl" description="Static provides per fragment" toReformat="false" toShortenFQNames="true">
     <variable name="String" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="stringCopy" expression="capitalize(String)" defaultValue="" alwaysStopAt="false" />
     <variable name="classLow" expression="decapitalize(String)" defaultValue="" alwaysStopAt="false" />

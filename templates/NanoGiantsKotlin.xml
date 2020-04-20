@@ -10,4 +10,10 @@
       <option name="KOTLIN_CLASS" value="true" />
     </context>
   </template>
+  <template name="injc" value="@Inject constructor() " description="Constructor with @Inject - Annotation" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+      <option name="KOTLIN_COMMENT" value="false" />
+    </context>
+  </template>
 </templateSet>
