@@ -1,4 +1,4 @@
-# NanoGiantsCommon
+# Common
 
 | Abbreviation | Description |
 | --- | --- |

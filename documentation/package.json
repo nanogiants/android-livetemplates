@@ -13,7 +13,7 @@
     "builder",
     "generator"
   ],
-  "author": "Stefan Neidig <s.neidig@appcom-interactive.de> (http://appcom-interactive.de)",
+  "author": "Stefan Neidig <s.neidig@nanogiants.de> (http://www.nanogiants.de)",
   "license": "ISC",
   "dependencies": {
     "mkdirp": "^0.5.5",
