@@ -1,4 +1,4 @@
-# NanoGiantsKotlin
+# Kotlin
 
 | Abbreviation | Description |
 | --- | --- |

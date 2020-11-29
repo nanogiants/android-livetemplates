@@ -1,4 +1,4 @@
-# NanoGiantsDagger2
+# Dagger2
 
 | Abbreviation | Description |
 | --- | --- |

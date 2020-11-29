@@ -1,6 +1,6 @@
-REM Installs appcom interactive live template configuration
+REM Installs NanoGiants live template configuration
 @echo off
-echo Installing appcom interactive live templates configuration...
+echo Installing NanoGiants live templates configuration...
 
 setlocal enableDelayedExpansion
 
